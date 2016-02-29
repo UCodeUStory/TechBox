@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_one"
+            android:icon="@mipmap/icon"
+            android:title="主页"></item>
+        <item
+            android:id="@+id/item_two"
+            android:icon="@mipmap/icon"
+            android:title="Volley框架"></item>
+        <item
+            android:id="@+id/item_three"
+            android:icon="@mipmap/icon"
+            android:title="退出"></item>
+        <item
+            android:id="@+id/item_four"
+            android:icon="@mipmap/icon"
+            android:title="TODO"></item>
+
+    </group>
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.administrator.test2"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sim.activity.WelcomeActivity"
+                  android:label="Welcome"
+                  android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="com.sim.activity.MyTabActivity"
+                  android:label="MyTabActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="com.sim.activity.TestNavigationViewActivity"
+                  android:label="TestNavigationViewActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name="com.sim.activity.TestCoordinatorLayoutActivity"
+                  android:label=" "
+                  android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name="com.sim.volley.activity.RequestActivity" />
+    </application>
+
+</manifest>

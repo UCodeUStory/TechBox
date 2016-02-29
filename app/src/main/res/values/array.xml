@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_tags">
+        <item>@string/tab_1</item>
+        <item>@string/tab_2</item>
+        <item>@string/tab_3</item>
+        <item>@string/tab_4</item>
+        <item>@string/tab_5</item>
+        <item>@string/tab_6</item>
+        <item>@string/tab_7</item>
+
+    </string-array>
+
+    <string name="tab_1">首页</string>
+    <string name="tab_2">订阅</string>
+    <string name="tab_3">娱乐</string>
+    <string name="tab_4">生活</string>
+    <string name="tab_5">科技</string>
+    <string name="tab_6">北京</string>
+    <string name="tab_7">财经</string>
+    <string name="tab_8">军事</string>
+    <string name="tab_9">社会</string>
+    <string name="tab_10">体育</string>
+    <string name="tab_11">汽车</string>
+    <string name="tab_12">微头条</string>
+    <string name="tab_13">时尚</string>
+    <string name="tab_14">房产</string>
+    <string name="tab_15">股票</string>
+    <string name="tab_16">互动直播</string>
+    <string name="tab_17">教育</string>
+    <string name="tab_18">历史</string>
+    <string name="tab_19">健康</string>
+    <string name="tab_20">搞笑</string>
+    <string name="tab_21">情感</string>
+    <string name="tab_22">游戏</string>
+    <string name="tab_23">跑步</string>
+    <string name="tab_24">NAB</string>
+</resources>
