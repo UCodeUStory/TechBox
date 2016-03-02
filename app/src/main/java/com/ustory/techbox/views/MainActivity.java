@@ -1,10 +1,9 @@
-package com.example.administrator.test2;
+package com.ustory.techbox.views;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,32 +11,54 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.administrator.test2.R;
 import com.sim.activity.TestCoordinatorLayoutActivity;
 import com.sim.activity.TestNavigationViewActivity;
 import com.sim.activity.WelcomeActivity;
+import com.ustory.techbox.core.BaseAppCompatActivity;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseAppCompatActivity implements View.OnClickListener {
 
     private TextInputLayout nameTextInputLayout;
     private TextInputLayout passwordTextInputLayout;
     private EditText userNameEdit;
     private EditText passwordEdit;
     private Button login;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    }
 
-        nameTextInputLayout = (TextInputLayout)findViewById(R.id.username_til);
-        passwordTextInputLayout = (TextInputLayout)findViewById(R.id.password_til);
-        userNameEdit = (EditText)findViewById(R.id.username_edit);
-        passwordEdit = (EditText)findViewById(R.id.password_edit);
-        login = (Button)findViewById(R.id.okbut);
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initViews(Bundle savedInstanceState) {
+        nameTextInputLayout = (TextInputLayout) findViewById(R.id.username_til);
+        passwordTextInputLayout = (TextInputLayout) findViewById(R.id.password_til);
+        userNameEdit = (EditText) findViewById(R.id.username_edit);
+        passwordEdit = (EditText) findViewById(R.id.password_edit);
+        login = (Button) findViewById(R.id.okbut);
+    }
+
+    @Override
+    protected void initToolbar(Bundle savedInstanceState) {
+
+    }
+
+    @Override
+    protected void initListeners() {
         login.setOnClickListener(this);
+        findViewById(R.id.back).setOnClickListener(this);
+    }
+
+    @Override
+    protected void initData() {
         userNameEdit.setText("ustory");
         passwordEdit.setText("123245678");
-        findViewById(R.id.back).setOnClickListener(this);
-
     }
 
     @Override
@@ -64,27 +85,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        Log.i("qiyue","userName="+userNameEdit.getText());
-        Log.i("qiyue","v.getId()"+v.getId());
-        if (v.getId()==R.id.okbut){
-            if("1".equals(userNameEdit.getText().toString())){
+        Log.i("qiyue", "userName=" + userNameEdit.getText());
+        Log.i("qiyue", "v.getId()" + v.getId());
+        if (v.getId() == R.id.okbut) {
+            if ("1".equals(userNameEdit.getText().toString())) {
                 //否则隐藏上次错误
-                Log.i("qiyue","loginSuccess");
+                Log.i("qiyue", "loginSuccess");
                 nameTextInputLayout.setErrorEnabled(false);
                 startActivity(new Intent(this, WelcomeActivity.class));
                 Snackbar.make(MainActivity.this.findViewById(R.id.lyj_layout), "登录成功", Snackbar.LENGTH_SHORT).show();
-            }else if("ustory".equals(userNameEdit.getText().toString())){
+            } else if ("ustory".equals(userNameEdit.getText().toString())) {
                 startActivity(new Intent(this, TestNavigationViewActivity.class));
                 Snackbar.make(MainActivity.this.findViewById(R.id.lyj_layout), "登录成功", Snackbar.LENGTH_SHORT).show();
                 finish();
-            }else if("3".equals(userNameEdit.getText().toString())){
+            } else if ("3".equals(userNameEdit.getText().toString())) {
                 startActivity(new Intent(this, TestCoordinatorLayoutActivity.class));
                 Snackbar.make(MainActivity.this.findViewById(R.id.lyj_layout), "登录成功", Snackbar.LENGTH_SHORT).show();
-            }else{
+            } else {
                 nameTextInputLayout.setError("username is not exist");
             }
-        }else if(v.getId()==R.id.back){
+        } else if (v.getId() == R.id.back) {
             finish();
         }
     }
+
+
 }
