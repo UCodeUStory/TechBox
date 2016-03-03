@@ -2,9 +2,7 @@ package com.ustory.techbox.views;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,18 +10,19 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.administrator.test2.R;
-import com.sim.activity.TestCoordinatorLayoutActivity;
-import com.sim.activity.TestNavigationViewActivity;
-import com.sim.activity.WelcomeActivity;
+import com.ustory.techbox.bean.User;
 import com.ustory.techbox.core.BaseAppCompatActivity;
+import com.ustory.techbox.iviews.MainView;
+import com.ustory.techbox.presenter.MainPresenter;
 
-public class MainActivity extends BaseAppCompatActivity implements View.OnClickListener {
+public class MainActivity extends BaseAppCompatActivity implements MainView,View.OnClickListener {
 
     private TextInputLayout nameTextInputLayout;
     private TextInputLayout passwordTextInputLayout;
     private EditText userNameEdit;
     private EditText passwordEdit;
     private Button login;
+    private MainPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +56,10 @@ public class MainActivity extends BaseAppCompatActivity implements View.OnClickL
 
     @Override
     protected void initData() {
+        this.presenter = new MainPresenter();
+        this.presenter.attachView(this);
         userNameEdit.setText("ustory");
-        passwordEdit.setText("123245678");
+        passwordEdit.setText("123456");
     }
 
     @Override
@@ -85,29 +86,60 @@ public class MainActivity extends BaseAppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        Log.i("qiyue", "userName=" + userNameEdit.getText());
-        Log.i("qiyue", "v.getId()" + v.getId());
         if (v.getId() == R.id.okbut) {
-            if ("1".equals(userNameEdit.getText().toString())) {
-                //否则隐藏上次错误
-                Log.i("qiyue", "loginSuccess");
-                nameTextInputLayout.setErrorEnabled(false);
-                startActivity(new Intent(this, WelcomeActivity.class));
-                Snackbar.make(MainActivity.this.findViewById(R.id.lyj_layout), "登录成功", Snackbar.LENGTH_SHORT).show();
-            } else if ("ustory".equals(userNameEdit.getText().toString())) {
-                startActivity(new Intent(this, TestNavigationViewActivity.class));
-                Snackbar.make(MainActivity.this.findViewById(R.id.lyj_layout), "登录成功", Snackbar.LENGTH_SHORT).show();
-                finish();
-            } else if ("3".equals(userNameEdit.getText().toString())) {
-                startActivity(new Intent(this, TestCoordinatorLayoutActivity.class));
-                Snackbar.make(MainActivity.this.findViewById(R.id.lyj_layout), "登录成功", Snackbar.LENGTH_SHORT).show();
-            } else {
-                nameTextInputLayout.setError("username is not exist");
-            }
+            this.presenter.login();
         } else if (v.getId() == R.id.back) {
             finish();
         }
     }
 
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        this.presenter.detachView();
+    }
+
+    @Override
+    public String getUserName() {
+        return userNameEdit.getText().toString();
+    }
+
+    @Override
+    public String getPassword() {
+        return passwordEdit.getText().toString();
+    }
+
+    @Override
+    public void clearUserName() {
+        userNameEdit.setText("");
+    }
+
+    @Override
+    public void clearPassword() {
+        passwordEdit.setText("");
+    }
+
+    @Override
+    public void showLoading() {
+        //显示控件
+    }
+
+    @Override
+    public void hideLoading() {
+        //隐藏控件
+    }
+
+    @Override
+    public void toWelcomexActivity(User user) {
+        Intent intent = new Intent(this,NavigationViewActivity.class);
+        intent.putExtra("userName",""+user.getUserName());
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void onFailure(String failedMessage) {
+        showToast(failedMessage);
+    }
 }

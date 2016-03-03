@@ -1,22 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/item_one"
-            android:icon="@mipmap/icon"
-            android:title="主页"></item>
-        <item
-            android:id="@+id/item_two"
-            android:icon="@mipmap/icon"
-            android:title="Volley框架"></item>
-        <item
-            android:id="@+id/item_three"
-            android:icon="@mipmap/icon"
-            android:title="退出"></item>
-        <item
-            android:id="@+id/item_four"
-            android:icon="@mipmap/icon"
-            android:title="TODO"></item>
+    <item
+        android:id="@+id/navigation_sub_setting"
 
-    </group>
+        android:title="TectBox Menu" />
+    <item
+        android:id="@+id/navigation_title"
+        android:title="学习无止境，贵在坚持！">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/item_one"
+                android:icon="@mipmap/icon"
+                android:title="最新动态"
+                ></item>
+            <item
+                android:id="@+id/item_two"
+                android:icon="@mipmap/icon"
+                android:title="Volley框架详解"></item>
+            <item
+                android:id="@+id/item_three"
+                android:icon="@mipmap/icon"
+                android:title="OKHttp框架详解"></item>
+            <item
+                android:id="@+id/item_four"
+                android:icon="@mipmap/icon"
+                android:title="Picasso框架详解"></item>
+            <item
+                android:id="@+id/item_five"
+                android:icon="@mipmap/icon"
+                android:title="Dagger框架详解"></item>
+            <item
+                android:id="@+id/item_six"
+                android:icon="@mipmap/icon"
+                android:title="Gson框架详解"></item>
+            <item
+                android:id="@+id/item_seven"
+                android:icon="@mipmap/icon"
+                android:title="XUtil框架详解"></item>
+            <item
+                android:id="@+id/item_eight"
+                android:icon="@mipmap/icon"
+                android:title="ImageLoader框架详解"></item>
+            <item
+                android:id="@+id/item_nine"
+                android:icon="@mipmap/icon"
+                android:title="LRU框架详解"></item>
+            <item
+                android:id="@+id/item_ten"
+                android:icon="@mipmap/icon"
+                android:title="Butternife框架详解"></item>
+            <item
+                android:id="@+id/item_eleven"
+                android:icon="@mipmap/icon"
+                android:title="Glie框架详解"></item>
+            <item
+                android:id="@+id/exit"
+                android:icon="@mipmap/icon"
+                android:title="退出"></item>
+            </group>
+        </menu>
+    </item>
+
 </menu>

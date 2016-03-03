@@ -29,8 +29,7 @@
                   android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name="com.sim.activity.TestNavigationViewActivity"
-                  android:label="TestNavigationViewActivity"
+        <activity android:name="com.ustory.techbox.views.NavigationViewActivity"
                   android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
@@ -40,8 +39,7 @@
 
         </activity>
 
-        <activity android:name="com.sim.volley.activity.RequestActivity" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <activity android:name="com.ustory.techbox.views.RequestActivity" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>

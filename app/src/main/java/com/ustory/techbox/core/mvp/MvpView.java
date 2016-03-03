@@ -31,8 +31,9 @@ package com.ustory.techbox.core.mvp;
  * pattern must implement. Generally this interface will be extended by a more specific interface
  * that then usually will be implemented by an Activity or Fragment.
  * <p>
- * Created by：ustory
- * Time：2016-01-04 11:31
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/2
  */
 public interface MvpView {
     /**
@@ -40,5 +41,5 @@ public interface MvpView {
      *
      * @param e e
      */
-    void onFailure(Throwable e);
+    void onFailure(String failedMessage);
 }

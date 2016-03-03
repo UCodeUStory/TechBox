@@ -34,15 +34,15 @@ package com.ustory.techbox.core.mvp;
  * Created by：ustory
  * Time：2016-01-03 18:10
  */
-public class BasePresenter<T extends MvpView> implements Presenter<T> {
+public class BasePresenter<V extends MvpView> implements Presenter<V> {
 
-    private T mMvpView;
+    protected V mMvpView;
    // public CompositeSubscription mCompositeSubscription;
    // public DataManager mDataManager;
 
 
     @Override
-    public void attachView(T mvpView) {
+    public void attachView(V mvpView) {
         this.mMvpView = mvpView;
       //  this.mCompositeSubscription = new CompositeSubscription();
       //  this.mDataManager = DataManager.getInstance();
@@ -60,9 +60,10 @@ public class BasePresenter<T extends MvpView> implements Presenter<T> {
         return mMvpView != null;
     }
 
-    public T getMvpView() {
+    public V getMvpView() {
         return mMvpView;
     }
+
 
     public void checkViewAttached() {
         if (!isViewAttached()) throw new MvpViewNotAttachedException();

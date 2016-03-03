@@ -28,6 +28,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
@@ -45,11 +46,11 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.setContentView(this.getLayoutId());
       //  ButterKnife.bind(this);
-        this.initViews(savedInstanceState);
-        this.initToolbar(savedInstanceState);
 
-        this.initData();
+        this.initToolbar(savedInstanceState);
+        this.initViews(savedInstanceState);
         this.initListeners();
+        this.initData();
     }
 
     /**
@@ -189,9 +190,10 @@ public abstract class BaseAppCompatActivity extends AppCompatActivity {
             Toast.makeText(this,getResources().getString(resId),duration).show();
         }
     }
+    //lyj_layout
+    public void showSnackbar(int layoutId,String msg){
+        Snackbar.make(findViewById(layoutId), msg, Snackbar.LENGTH_SHORT).show();
+    }
 
-    /*********
-     * Toast *
-     *********/
 
 }

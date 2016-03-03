@@ -30,4 +30,5 @@
     <string name="request_fail_text">请求失败2</string>
     <string name="request_fail_text1">请求失败1</string>
     <string name="request_params_text">参数格式:key=value，多个参数用 ; 分隔</string>
+    <string name="main_pager">最新动态</string>
 </resources>
