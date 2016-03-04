@@ -12,6 +12,7 @@
             <item
                 android:id="@+id/item_one"
                 android:icon="@mipmap/icon"
+                android:checked="true"
                 android:title="最新动态"
                 ></item>
             <item

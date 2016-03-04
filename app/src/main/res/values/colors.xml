@@ -11,4 +11,20 @@
     <color name="Indigo_colorPrimary">#3f51b5</color>
     <color name="Indigo_nav_color">#4675FF</color>
     <color name="app_bg">#efefef</color>
+    <color name="color_item_press">#ffff0000</color>
+    <color name="color_item_normal">#44ff0000</color>
+    <color name="purple">#9900cc</color>
+    <!-- item -->
+    <color name="item_date">#ffA8A8A8</color>
+    <color name="item_title_tv">#ff000000</color>
+    <color name="item_tag_tv">#ffFFFFFF</color>
+
+    <color name="common_android_tag_bg">#ff388E3C</color>
+    <color name="common_ios_tag_bg">#ff0377BC</color>
+    <color name="common_js_tag_bg">#ffEF6C02</color>
+    <color name="common_github_tag_bg">#ff000000</color>
+    <color name="common_title_tv">#ff000000</color>
+    <color name="common_item_via">#ffA8A8A8</color>
+    <color name="item_card_background">#ffF6F6EF</color>
+    <color name="item_selectable_pressed">#ff9475CD</color>
 </resources>

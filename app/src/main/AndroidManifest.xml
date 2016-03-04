@@ -19,22 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.sim.activity.WelcomeActivity"
-                  android:label="Welcome"
-                  android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name="com.sim.activity.MyTabActivity"
-                  android:label="MyTabActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
         <activity android:name="com.ustory.techbox.views.NavigationViewActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity android:name="com.sim.activity.TestCoordinatorLayoutActivity"
-                  android:label=" "
                   android:theme="@style/AppTheme.NoActionBar">
 
         </activity>

@@ -65,7 +65,7 @@ public class NavigationViewActivity extends BaseAppCompatActivity {
 
     @Override
     protected void initData() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new MainFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new NewMessageFragment()).commit();
         // 初始化MenuItems
         mMenuItems = new HashMap<>();
         if (menuIds.length > 0) {
@@ -118,7 +118,7 @@ public class NavigationViewActivity extends BaseAppCompatActivity {
         switch (menuItem.getItemId())
         {
             case R.id.item_one:
-                getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new MainFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new NewMessageFragment()).commit();
                 mToolbar.setTitle(getResources().getString(R.string.main_pager));
                 break;
             case R.id.item_two:

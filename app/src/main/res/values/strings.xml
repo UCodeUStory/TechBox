@@ -31,4 +31,7 @@
     <string name="request_fail_text1">请求失败1</string>
     <string name="request_params_text">参数格式:key=value，多个参数用 ; 分隔</string>
     <string name="main_pager">最新动态</string>
+    <string name="daily_android_tag_tv">Android</string>
+    <string name="daily_ios_tag_tv">iOS</string>
+    <string name="daily_js_tag_tv">前端</string>
 </resources>

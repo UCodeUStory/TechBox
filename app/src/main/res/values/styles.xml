@@ -29,5 +29,10 @@
     <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
         <item name="color">@android:color/white</item>
     </style>
-
+    <style name="CustomCardView" parent="CardView">
+        <item name="contentPadding">0dp</item>
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
 </resources>
