@@ -34,7 +34,7 @@
         android:padding="@dimen/item_content_padding">
 
         <ImageView
-            android:id="@+id/image"
+            android:id="@+id/photo"
             android:layout_width="120dp"
             android:layout_height="90dp"
             android:scaleType="centerCrop"
@@ -44,11 +44,11 @@
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@id/image"
+            android:layout_alignTop="@id/photo"
             android:layout_marginLeft="9dp"
             android:layout_marginStart="9dp"
-            android:layout_toEndOf="@id/image"
-            android:layout_toRightOf="@id/image"
+            android:layout_toEndOf="@id/photo"
+            android:layout_toRightOf="@id/photo"
             android:ellipsize="end"
             android:gravity="top|start"
             android:lineSpacingExtra="2dp"
@@ -70,11 +70,11 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/image"
+            android:layout_alignBottom="@id/photo"
             android:layout_marginLeft="9dp"
             android:layout_marginStart="9dp"
-            android:layout_toEndOf="@id/image"
-            android:layout_toRightOf="@id/image"
+            android:layout_toEndOf="@id/photo"
+            android:layout_toRightOf="@id/photo"
             android:orientation="horizontal">
 
             <TextView

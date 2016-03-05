@@ -8,10 +8,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.administrator.test2.R;
 import com.ustory.techbox.bean.ITTech;
+import com.ustory.techbox.utils.GlideUtils;
 
 import java.util.List;
 
@@ -57,7 +59,7 @@ public class NewTechRecyclerAdapter extends RecyclerView.Adapter<NewTechRecycler
 		holder.label_two.setText(mITTechList.get(position).getSimilar_key_1());
 		holder.content.setText(mITTechList.get(position).getContent());
 		holder.date.setText(mITTechList.get(position).getDate());
-
+		GlideUtils.displayNative(holder.photo,R.mipmap.test0);
 		// 如果设置了回调，则设置点击事件
 		if (mOnItemClickLitener != null)
 		{
@@ -119,6 +121,7 @@ public class NewTechRecyclerAdapter extends RecyclerView.Adapter<NewTechRecycler
 		TextView label_one;
 		TextView label_two;
 		TextView content;
+		ImageView photo;
 
 		public MyViewHolder(View view)
 		{
@@ -127,7 +130,7 @@ public class NewTechRecyclerAdapter extends RecyclerView.Adapter<NewTechRecycler
 			label_one = (TextView) view.findViewById(R.id.label_one);
 			label_two = (TextView) view.findViewById(R.id.label_two);
 			content = (TextView) view.findViewById(R.id.content);
-		
+		    ImageView photo = (ImageView) view.findViewById(R.id.photo);
 		
 		}
 	}

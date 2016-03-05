@@ -38,5 +38,7 @@ public class DataProvider {
             "2016.2.22","2016.2.21","2016.1.19","2016.1.4",
     };
 
+    //public static
+
 
 }
