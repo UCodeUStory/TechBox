@@ -11,7 +11,7 @@ public class ITTech {
     private String title;
     private String content;
     private String date;
-    private String image;
+    private int image;
     private String similar_key_0;
     private String similar_key_1;
     private String similar_key_2;
@@ -49,11 +49,11 @@ public class ITTech {
         this.date = date;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(int image) {
         this.image = image;
     }
 

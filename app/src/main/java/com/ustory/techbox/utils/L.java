@@ -8,7 +8,7 @@ import android.util.Log;
  */
 public class L {
 
-	private final static String TAG = "UStoryFrame";
+	private final static String TAG = "techbox";
 	private final static boolean DEBUG = true;
 	public static void i(String message){
 		if (DEBUG){			

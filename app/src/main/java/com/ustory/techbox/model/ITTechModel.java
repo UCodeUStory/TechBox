@@ -47,6 +47,7 @@ public class ITTechModel implements IITTechModel {
             itTech.setSimilar_key_0(DataProvider.similar_key_0[i]);
             itTech.setSimilar_key_1(DataProvider.similar_key_1[i]);
             itTech.setDate(DataProvider.dates[i]);
+            itTech.setImage(DataProvider.photo[i]);
             list.add(itTech);
         }
         if (list!=null)

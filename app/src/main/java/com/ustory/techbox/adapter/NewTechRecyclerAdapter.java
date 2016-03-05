@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.administrator.test2.R;
 import com.ustory.techbox.bean.ITTech;
 import com.ustory.techbox.utils.GlideUtils;
+import com.ustory.techbox.utils.L;
 
 import java.util.List;
 
@@ -23,6 +24,7 @@ public class NewTechRecyclerAdapter extends RecyclerView.Adapter<NewTechRecycler
 	//private List<String> mDatas;
 	private List<ITTech> mITTechList;
 	private LayoutInflater mInflater;
+	private Context mContext;
 
 	public interface OnItemClickLitener
 	{
@@ -42,6 +44,7 @@ public class NewTechRecyclerAdapter extends RecyclerView.Adapter<NewTechRecycler
 	{
 		mInflater = LayoutInflater.from(context);
 		this.mITTechList = datas;
+		this.mContext = context;
 	}
 
 	@Override
@@ -59,7 +62,10 @@ public class NewTechRecyclerAdapter extends RecyclerView.Adapter<NewTechRecycler
 		holder.label_two.setText(mITTechList.get(position).getSimilar_key_1());
 		holder.content.setText(mITTechList.get(position).getContent());
 		holder.date.setText(mITTechList.get(position).getDate());
-		GlideUtils.displayNative(holder.photo,R.mipmap.test0);
+		GlideUtils.displayNative(holder.photo,mITTechList.get(position).getImage());
+		//String url = null;
+		L.i("onBindViewHolder");
+		//holder.photo.setImageResource(R.drawable.ic_launcher);
 		// 如果设置了回调，则设置点击事件
 		if (mOnItemClickLitener != null)
 		{
@@ -130,7 +136,7 @@ public class NewTechRecyclerAdapter extends RecyclerView.Adapter<NewTechRecycler
 			label_one = (TextView) view.findViewById(R.id.label_one);
 			label_two = (TextView) view.findViewById(R.id.label_two);
 			content = (TextView) view.findViewById(R.id.content);
-		    ImageView photo = (ImageView) view.findViewById(R.id.photo);
+			photo = (ImageView) view.findViewById(R.id.photo);
 		
 		}
 	}

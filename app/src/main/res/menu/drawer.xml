@@ -18,43 +18,43 @@
             <item
                 android:id="@+id/item_two"
                 android:icon="@mipmap/icon"
-                android:title="Volley框架详解"></item>
+                android:title="Volley"></item>
             <item
                 android:id="@+id/item_three"
                 android:icon="@mipmap/icon"
-                android:title="OKHttp框架详解"></item>
+                android:title="OKHttp"></item>
             <item
                 android:id="@+id/item_four"
                 android:icon="@mipmap/icon"
-                android:title="Picasso框架详解"></item>
+                android:title="Glide"></item>
             <item
                 android:id="@+id/item_five"
                 android:icon="@mipmap/icon"
-                android:title="Dagger框架详解"></item>
+                android:title="Picasso"></item>
             <item
                 android:id="@+id/item_six"
                 android:icon="@mipmap/icon"
-                android:title="Gson框架详解"></item>
+                android:title="Gson"></item>
             <item
                 android:id="@+id/item_seven"
                 android:icon="@mipmap/icon"
-                android:title="XUtil框架详解"></item>
+                android:title="XUtil"></item>
             <item
                 android:id="@+id/item_eight"
                 android:icon="@mipmap/icon"
-                android:title="ImageLoader框架详解"></item>
+                android:title="ImageLoader"></item>
             <item
                 android:id="@+id/item_nine"
                 android:icon="@mipmap/icon"
-                android:title="LRU框架详解"></item>
+                android:title="LRU"></item>
             <item
                 android:id="@+id/item_ten"
                 android:icon="@mipmap/icon"
-                android:title="Butternife框架详解"></item>
+                android:title="Butternife"></item>
             <item
                 android:id="@+id/item_eleven"
                 android:icon="@mipmap/icon"
-                android:title="Glie框架详解"></item>
+                android:title="Dagger"></item>
             <item
                 android:id="@+id/exit"
                 android:icon="@mipmap/icon"

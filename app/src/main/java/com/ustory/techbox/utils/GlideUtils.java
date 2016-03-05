@@ -37,9 +37,9 @@ import com.ustory.techbox.custom.GlideCircleTransform;
 
 
 /**
- * Description：GlideUtils
- * Created by：CaMnter
- * Time：2016-01-04 22:19
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/2
  */
 public class GlideUtils {
 
@@ -52,20 +52,15 @@ public class GlideUtils {
      * @param url  url
      */
     public static void display(ImageView view, String url) {
-        //displayUrl(view, url, R.mipmap.img_default_gray);
+        displayUrl(view, url, R.mipmap.img_default_gray);
     }
 
-/*
-   / *
-     * glide加载图片
-     *
-     * @param view         view
-     * @param url          url
-     * @param defaultImage defaultImage
+
+
     private static void displayUrl(final ImageView view, String url, @DrawableRes int defaultImage) {
         // 不能崩
         if (view == null) {
-            Logger.e("GlideUtils -> display -> imageView is null");
+           L.e("GlideUtils -> display -> imageView is null");
             return;
         }
         Context context = view.getContext();
@@ -83,16 +78,11 @@ public class GlideUtils {
                     .placeholder(defaultImage)
                     .crossFade()
                     .centerCrop()
-                    .into(view)
-                    .getSize((width, height) -> {
-                        if (!view.isShown()) {
-                            view.setVisibility(View.VISIBLE);
-                        }
-                    });
+                    .into(view);
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
     public static void displayNative(final ImageView view, @DrawableRes int resId) {
         // 不能崩
@@ -114,11 +104,10 @@ public class GlideUtils {
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
                     .crossFade()
                     .centerCrop()
-                    .into(view)
-                    .getSize(new SizeReadyCallback() {
+                    .into(view).getSize(new SizeReadyCallback(){
                         @Override
                         public void onSizeReady(int width, int height) {
-                            L.i("qiyue","width="+width);
+                            L.i("Glide-loadNativeImage-width="+width+"height="+height);
                         }
                     });
         } catch (Exception e) {
@@ -127,14 +116,18 @@ public class GlideUtils {
 
     }
 
+    /**
+     * placeholder 占位图
+     * @param view
+     * @param res
+     */
+
     public static void displayCircleHeader(ImageView view, @DrawableRes int res) {
-        // 不能崩
         if (view == null) {
             L.e("GlideUtils -> display -> imageView is null");
             return;
         }
         Context context = view.getContext();
-        // View你还活着吗？
         if (context instanceof Activity) {
             if (((Activity) context).isFinishing()) {
                 return;
