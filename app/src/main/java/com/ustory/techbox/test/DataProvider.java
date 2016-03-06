@@ -52,5 +52,21 @@ public class DataProvider {
             R.mipmap.test1
     };
 
+    public static String volleyContent[] = {
+            "测试请求String类型数据","测试请求JSON类型数据","测试请求Image",
+            "测试ImageLoader","测试NetworkImageView","测试自定义XML请求","测试发送POST请求"
+    };
+    public final static int STRING_REQUEST = 0;
+    public final static int JSON_REQUEST = 1;
+    public final static int IMAGE_REQUEST = 2;
+    public final static int IMAGE_LOADER = 3;
+    public final static int NETWORK_IMAGEVIEW = 4;
+    public final static int XML_REQUEST = 5;
+    public final static int POST_REQUEST = 6;
+
+    public static int ids [] = {
+        STRING_REQUEST,JSON_REQUEST,IMAGE_REQUEST,IMAGE_LOADER,NETWORK_IMAGEVIEW,XML_REQUEST,POST_REQUEST
+    };
+
 
 }

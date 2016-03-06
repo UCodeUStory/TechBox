@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff">
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/selector_volleyitem_clickable"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:padding="6dp"
+        android:text="测试发送String类型请求"
+        android:gravity="center"
+        android:textColor="@color/demo_item_text"
+        android:textSize="20sp"
+       />
+</RelativeLayout>
