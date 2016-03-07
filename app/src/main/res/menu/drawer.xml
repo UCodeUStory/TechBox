@@ -16,6 +16,11 @@
                 android:title="最新动态"
                 ></item>
             <item
+                android:id="@+id/recommend_books"
+                android:icon="@mipmap/icon"
+                android:title="好书推荐"
+                ></item>
+            <item
                 android:id="@+id/item_two"
                 android:icon="@mipmap/icon"
                 android:title="Volley"></item>

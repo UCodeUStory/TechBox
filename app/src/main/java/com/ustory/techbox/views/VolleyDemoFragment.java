@@ -46,7 +46,6 @@ public class VolleyDemoFragment extends BaseFragment implements VolleyView,View.
     @Override
     protected void initView(View rootView) {
          listView = $(R.id.volley_list);
-
     }
 
     @Override

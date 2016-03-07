@@ -23,6 +23,7 @@ public class NavigationViewActivity extends BaseAppCompatActivity {
     protected HashMap<Integer, MenuItem> mMenuItems;
     public static int[] menuIds = new int[]{
             R.id.item_one,
+            R.id.recommend_books,
             R.id.item_two,
             R.id.item_three,
             R.id.item_four,
@@ -124,6 +125,10 @@ public class NavigationViewActivity extends BaseAppCompatActivity {
             case R.id.item_two:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new VolleyDemoFragment()).commit();
                 mToolbar.setTitle("Volley案例分析");
+                break;
+            case R.id.recommend_books:
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new RecommendBooksFragment()).commit();
+                mToolbar.setTitle("好书推荐");
                 break;
             case R.id.exit:
                 finish();

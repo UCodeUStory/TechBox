@@ -68,5 +68,14 @@ public class DataProvider {
         STRING_REQUEST,JSON_REQUEST,IMAGE_REQUEST,IMAGE_LOADER,NETWORK_IMAGEVIEW,XML_REQUEST,POST_REQUEST
     };
 
+    public static int bookImage[] = {
+            R.mipmap.book1,R.mipmap.book2,R.mipmap.book3,R.mipmap.book4,R.mipmap.book5,
+            R.mipmap.book6,R.mipmap.book7
+    };
+
+    public static String bookName[] ={
+            "Android","Android","Android","Android","Android","Android","Android"
+    };
+
 
 }
