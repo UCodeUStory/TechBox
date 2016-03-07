@@ -34,9 +34,9 @@ import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 
 /**
- * Description：GlideCircleTransform
- * Created by：CaMnter
- * Time：2016-01-16 14:31
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/7
  */
 public class GlideCircleTransform extends BitmapTransformation {
 

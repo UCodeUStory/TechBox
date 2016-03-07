@@ -31,5 +31,16 @@
     <color name="demo_item_bg">#ff388E3C</color>
     <color name="demo_item_title_color">#d35100</color>
     <color name="demo_item_text">#ffFFFFFF</color>
-    <color name="demo_item_press_bg">#ffEF6C02</color>
+    <color name="demo_item_press_bg">#ff388E3C</color>
+    <color name="demo_item_normal">#0d55b9</color>
+
+    <color name="red">#FF0000</color>
+    <color name="blue">#1BA1E2</color>
+    <color name="orange">#FF7d23</color>
+    <!-- state bar-->
+    <color name="material_dark">#303F9F</color>
+    <!-- toolbar-->
+    <color name="material">#3F51B5</color>
+    <color name="black">#000000</color>
+    <color name="gray">#999999</color>
 </resources>

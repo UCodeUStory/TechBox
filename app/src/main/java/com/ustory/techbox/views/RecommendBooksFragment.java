@@ -1,5 +1,6 @@
 package com.ustory.techbox.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -43,10 +44,10 @@ public class RecommendBooksFragment extends BaseFragment implements IBookView {
             @Override
             public void onItemClick(View view, int position) {
 //                Log.e("position","="+position);
-//                Toast.makeText(MainActivity.this, books.get(position).getTitle(), Toast.LENGTH_SHORT).show();
-                //Intent intent=new Intent();
-               // intent.setClass(getActivity(),BookDetailActivity.class);
-               // startActivity(intent);
+               // Toast.makeText(MainActivity.this, books.get(position).getTitle(), Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent();
+                intent.setClass(getActivity(),ProductDetailActivity.class);
+                startActivity(intent);
             }
         };
         adapter = new BooksAdapter(books,itemClickListener);

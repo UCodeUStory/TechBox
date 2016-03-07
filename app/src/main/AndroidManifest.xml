@@ -25,6 +25,8 @@
         </activity>
 
         <activity android:name="com.ustory.techbox.views.RequestActivity" />
+        <activity android:name="com.ustory.techbox.views.ProductDetailActivity"
+           android:theme="@style/AppTheme.NoActionBar"/>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>

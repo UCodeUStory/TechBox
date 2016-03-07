@@ -1,7 +1,9 @@
 package com.ustory.techbox.bean;
 
 /**
- * Created by clevo on 2015/7/27.
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/7
  */
 public class Book {
     private Integer id;

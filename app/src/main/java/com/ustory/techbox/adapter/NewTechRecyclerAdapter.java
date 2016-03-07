@@ -18,6 +18,11 @@ import com.ustory.techbox.utils.L;
 
 import java.util.List;
 
+/**
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/7
+ */
 public class NewTechRecyclerAdapter extends RecyclerView.Adapter<NewTechRecyclerAdapter.MyViewHolder>
 {
 

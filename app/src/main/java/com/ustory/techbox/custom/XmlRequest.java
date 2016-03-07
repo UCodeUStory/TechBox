@@ -17,7 +17,11 @@ import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/7
+ */
 public class XmlRequest extends Request<XmlPullParser> {
 
 	private final Listener<XmlPullParser> mListener;

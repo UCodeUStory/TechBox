@@ -14,6 +14,11 @@ import com.ustory.techbox.utils.VolleyUtil;
 
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
+/**
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/7
+ */
 public class ImageRequestAdapter extends ImageBaseAdapter {
 
 	private Context context;

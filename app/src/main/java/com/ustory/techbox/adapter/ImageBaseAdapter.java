@@ -9,7 +9,11 @@ import android.widget.ImageView;
 
 import com.example.administrator.test2.R;
 
-
+/**
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/7
+ */
 public abstract class ImageBaseAdapter extends BaseAdapter {
 
 	private String[] imageUrlArray;

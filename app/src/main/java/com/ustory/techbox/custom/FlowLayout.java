@@ -9,12 +9,9 @@ import android.view.ViewGroup;
 import com.example.administrator.test2.R;
 
 /**
- * FlowLayout is much more like a {@link android.widget.LinearLayout}, but it can automatically
- * separate the widgets wrapped in it into multiple lines just like the water flow.
- *
- * Inspired by {@see http://hzqtc.github.io/2013/12/android-custom-layout-flowlayout.html}
- *
- * @author liangfeizc {@see http://www.liangfeizc.com}
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/7
  */
 public class FlowLayout extends ViewGroup {
 

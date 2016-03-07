@@ -10,7 +10,11 @@ import com.ustory.techbox.utils.LruImageCache;
 import com.ustory.techbox.utils.StringUtil;
 import com.ustory.techbox.utils.VolleyUtil;
 
-
+/**
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/7
+ */
 public class NetworkImageViewAdapter extends ImageBaseAdapter{
 
 	private ImageLoader imageLoader;
