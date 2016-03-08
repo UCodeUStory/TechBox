@@ -46,7 +46,7 @@ public class RecommendBooksFragment extends BaseFragment implements IBookView {
 //                Log.e("position","="+position);
                // Toast.makeText(MainActivity.this, books.get(position).getTitle(), Toast.LENGTH_SHORT).show();
                 Intent intent=new Intent();
-                intent.setClass(getActivity(),ProductDetailActivity.class);
+                intent.setClass(getActivity(),BookDetailActivity.class);
                 startActivity(intent);
             }
         };

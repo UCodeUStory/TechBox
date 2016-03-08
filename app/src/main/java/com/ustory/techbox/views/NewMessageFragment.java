@@ -46,9 +46,6 @@ public class NewMessageFragment extends Fragment implements ITTechView, View.OnC
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.lasted_new_activities_fragment,container,false);
         mRecyclerView = (RecyclerView)view.findViewById(R.id.id_recyclerview);
-
-
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.id_recyclerview);
         mAdapter = new NewTechRecyclerAdapter(getActivity(), mITTechList);
 
        // mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(4,

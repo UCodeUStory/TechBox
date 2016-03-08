@@ -76,6 +76,24 @@ public class DataProvider {
     public static String bookName[] ={
             "Android","Android","Android","Android","Android","Android","Android"
     };
+    public static String type[] ={
+            "UI","UI","API","UI","UI","UI","UI","UI","UI","UI","UI"
+    };
+    public static String AndroidNewTechContent[] = {
+            "ToolsBar \n" +
+                    " Android Material Design之Toolbar与Palette实践 ",
+            "Android5.0新控件CardView的介绍和使用",
+            "RecyclerView" +
+                    "使用它代替ListView，使其更加流畅，开发更加简洁。","Palette，你还在担心UI布局样式不统一吗，还在为取色烦恼吗？",
+            "View Elevation哇塞，既然支持Z周，从此Android变得活灵活现 ","FloatingActionButton，小小工具箱，不愁无处放了",
+            "Snackbar代替旧版Toast效果更让人接受","TabLayout轻松实现Tab,","Navigation View抽屉菜单栏的无可替代品","CoordinatorLayout这个真是太精彩了，同能如果强大有用，一言难以形容",
+            "AppBarLayout，我想对你说ActionBar，你可以out了！！！！"
+    };
 
+    public static String androidTechDate[] = {
+            "3小时前","4小时前","5小时前","6小时前","7小时前","8小时前",
+            "9小时前","10小时前","11小时前","1天前","2天前"
+    };
+    //Android TextView 里面既然支持"\n"
 
 }

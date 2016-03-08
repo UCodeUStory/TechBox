@@ -24,6 +24,8 @@ public class NavigationViewActivity extends BaseAppCompatActivity {
     public static int[] menuIds = new int[]{
             R.id.item_one,
             R.id.recommend_books,
+            R.id.android_new_ui,
+            R.id.about_author,
             R.id.item_two,
             R.id.item_three,
             R.id.item_four,
@@ -129,6 +131,10 @@ public class NavigationViewActivity extends BaseAppCompatActivity {
             case R.id.recommend_books:
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new RecommendBooksFragment()).commit();
                 mToolbar.setTitle("好书推荐");
+                break;
+            case R.id.android_new_ui:
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new AndroidTechListFragment()).commit();
+                mToolbar.setTitle("Android新特性");
                 break;
             case R.id.exit:
                 finish();

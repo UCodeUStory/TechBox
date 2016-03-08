@@ -6,7 +6,7 @@
         android:title="TectBox Menu" />
     <item
         android:id="@+id/navigation_title"
-        android:title="学习无止境，贵在坚持！">
+        android:title="学无止境，贵在坚持！">
         <menu>
             <group android:checkableBehavior="single">
             <item
@@ -20,6 +20,16 @@
                 android:icon="@mipmap/icon"
                 android:title="好书推荐"
                 ></item>
+            <item
+                android:id="@+id/android_new_ui"
+                android:icon="@mipmap/icon"
+                android:title="Android新技术">
+            </item>
+            <item
+                android:id="@+id/about_author"
+                android:icon="@mipmap/icon"
+                android:title="关于作者">
+            </item>
             <item
                 android:id="@+id/item_two"
                 android:icon="@mipmap/icon"

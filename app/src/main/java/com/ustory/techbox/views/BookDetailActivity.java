@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -13,6 +14,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
@@ -21,9 +23,11 @@ import android.widget.TextView;
 import com.example.administrator.test2.R;
 
 /**
- * Created by clevo on 2015/7/30.
+ * @ Author: qiyue (ustory)
+ * @ Email: qiyuekoon@foxmail.com
+ * @ Data:2016/3/6
  */
-public class ProductDetailActivity extends AppCompatActivity implements View.OnClickListener{
+public class BookDetailActivity extends AppCompatActivity implements View.OnClickListener{
     private LinearLayout frontView, bottomView;
     private FloatingActionButton fab;
     private AnimatorSet showAnim,hiddenAnim;
@@ -37,9 +41,11 @@ public class ProductDetailActivity extends AppCompatActivity implements View.OnC
         //Intent intent = getIntent();
         //intent.getSerializableExtra()
         Toolbar tb= (Toolbar) findViewById(R.id.tb_detail );
+        tb.setTitleTextColor(Color.WHITE);
+        tb.setTitle("图书详情");
         tb.setNavigationIcon(R.mipmap.ic_arrow_back_white);
-
-
+        setSupportActionBar(tb);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         fab= (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(this);
 
@@ -56,6 +62,15 @@ public class ProductDetailActivity extends AppCompatActivity implements View.OnC
 
         initView();
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void initView() {
