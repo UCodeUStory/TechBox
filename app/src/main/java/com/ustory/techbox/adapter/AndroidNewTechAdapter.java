@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.example.administrator.test2.R;
 import com.ustory.techbox.bean.AndroidTech;
+import com.ustory.techbox.utils.L;
 
 import java.util.List;
 
@@ -45,6 +46,7 @@ public class AndroidNewTechAdapter extends RecyclerView.Adapter<AndroidNewTechAd
     @Override
     public void onBindViewHolder(AndroidTechView techView, int position) {
        // techView.imageView.setImageResource(androidTechs.get(position).getImg());
+
           techView.content.setText(androidTechs.get(position).getContent());
           techView.type.setText(androidTechs.get(position).getType());
           techView.date.setText(androidTechs.get(position).getDate());
@@ -75,6 +77,7 @@ public class AndroidNewTechAdapter extends RecyclerView.Adapter<AndroidNewTechAd
 
         @Override
         public void onClick(View v) {
+            L.i("qiyue","onClick");
             itemClickListener.onItemClick(v,this.getLayoutPosition());
         }
     }

@@ -2,7 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_sub_setting"
-
         android:title="TectBox Menu" />
     <item
         android:id="@+id/navigation_title"
@@ -26,18 +25,9 @@
                 android:title="Android新技术">
             </item>
             <item
-                android:id="@+id/about_author"
-                android:icon="@mipmap/icon"
-                android:title="关于作者">
-            </item>
-            <item
                 android:id="@+id/item_two"
                 android:icon="@mipmap/icon"
                 android:title="Volley"></item>
-            <item
-                android:id="@+id/item_three"
-                android:icon="@mipmap/icon"
-                android:title="OKHttp"></item>
             <item
                 android:id="@+id/item_four"
                 android:icon="@mipmap/icon"
@@ -46,6 +36,10 @@
                 android:id="@+id/item_five"
                 android:icon="@mipmap/icon"
                 android:title="Picasso"></item>
+            <item
+                android:id="@+id/item_three"
+                android:icon="@mipmap/icon"
+                android:title="OKHttp"></item>
             <item
                 android:id="@+id/item_six"
                 android:icon="@mipmap/icon"
@@ -70,6 +64,11 @@
                 android:id="@+id/item_eleven"
                 android:icon="@mipmap/icon"
                 android:title="Dagger"></item>
+            <item
+                android:id="@+id/about_author"
+                android:icon="@mipmap/icon"
+                android:title="关于作者">
+            </item>
             <item
                 android:id="@+id/exit"
                 android:icon="@mipmap/icon"

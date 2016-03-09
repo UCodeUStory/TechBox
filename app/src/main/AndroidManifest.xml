@@ -27,6 +27,12 @@
         <activity android:name="com.ustory.techbox.views.RequestActivity" />
         <activity android:name="com.ustory.techbox.views.BookDetailActivity"
            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ustory.techbox.views.CardViewDemoActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ustory.techbox.views.ToolsBarDemoActivity"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ustory.techbox.views.RecycleViewDemoActivity"
+                  />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>

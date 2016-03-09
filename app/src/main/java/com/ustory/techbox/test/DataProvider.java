@@ -84,9 +84,13 @@ public class DataProvider {
                     " Android Material Design之Toolbar与Palette实践 ",
             "Android5.0新控件CardView的介绍和使用",
             "RecyclerView" +
-                    "使用它代替ListView，使其更加流畅，开发更加简洁。","Palette，你还在担心UI布局样式不统一吗，还在为取色烦恼吗？",
-            "View Elevation哇塞，既然支持Z周，从此Android变得活灵活现 ","FloatingActionButton，小小工具箱，不愁无处放了",
-            "Snackbar代替旧版Toast效果更让人接受","TabLayout轻松实现Tab,","Navigation View抽屉菜单栏的无可替代品","CoordinatorLayout这个真是太精彩了，同能如果强大有用，一言难以形容",
+                    "使用它代替ListView，使其更加流畅，开发更加简洁。",
+            "TabLayout谷歌新推出的一个Tablayout用来实现tab，使用更是简洁",
+            "View Elevation哇塞，既然支持Z周，从此Android变得活灵活现 ",
+            "FloatingActionButton，小小工具箱，不愁无处放了",
+            "Snackbar代替旧版Toast效果更让人接受",
+            "Palette，你还在担心UI布局样式不统一吗，还在为取色烦恼吗？","Navigation View抽屉菜单栏的无可替代品",
+            "CoordinatorLayout这个真是太精彩了，同能如果强大有用，一言难以形容",
             "AppBarLayout，我想对你说ActionBar，你可以out了！！！！"
     };
 

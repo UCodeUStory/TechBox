@@ -1,5 +1,6 @@
 package com.ustory.techbox.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -44,6 +45,25 @@ public class AndroidTechListFragment extends BaseFragment implements IAndroidTec
             @Override
             public void onItemClick(View view, int position) {
                 //TODO
+                L.i("qiyue","view.getId()="+position);
+                AndroidTech androidTech = adapter.getAndroidTechs().get(position);
+                Intent intent;
+                switch (androidTech.getId()){
+                    case 0:
+                         intent = new Intent(getActivity(),ToolsBarDemoActivity.class);
+                         startActivity(intent);
+                         break;
+                    case 1:
+                         intent = new Intent(getActivity(),CardViewDemoActivity.class);
+                         startActivity(intent);
+                         break;
+                    case 2:
+                        intent = new Intent(getActivity(),RecycleViewDemoActivity.class);
+                        startActivity(intent);
+                         break;
+                    default:
+                         break;
+                }
             }
         };
     }
