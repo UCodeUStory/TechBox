@@ -1,5 +1,7 @@
 package com.ustory.techbox.bean;
 
+import java.util.List;
+
 /**
  * @ Author: qiyue (ustory)
  * @ Email: qiyuekoon@foxmail.com
@@ -15,6 +17,54 @@ public class ITTech {
     private String similar_key_0;
     private String similar_key_1;
     private String similar_key_2;
+
+    private int type;
+    private String detailHeaderTitle;
+    private String detailHeaderContent;
+    private String detailContentHeader;
+    private List<String> detailContentItems;
+
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public String getDetailHeaderTitle() {
+        return detailHeaderTitle;
+    }
+
+    public void setDetailHeaderTitle(String detailHeaderTitle) {
+        this.detailHeaderTitle = detailHeaderTitle;
+    }
+
+    public String getDetailHeaderContent() {
+        return detailHeaderContent;
+    }
+
+    public void setDetailHeaderContent(String detailHeaderContent) {
+        this.detailHeaderContent = detailHeaderContent;
+    }
+
+    public String getDetailContentHeader() {
+        return detailContentHeader;
+    }
+
+    public void setDetailContentHeader(String detailContentHeader) {
+        this.detailContentHeader = detailContentHeader;
+    }
+
+    public List<String> getDetailContentItems() {
+        return detailContentItems;
+    }
+
+    public void setDetailContentItems(List<String> detailContentItems) {
+        this.detailContentItems = detailContentItems;
+    }
+
 
 
     public Integer getId() {

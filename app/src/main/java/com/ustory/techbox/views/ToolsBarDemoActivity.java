@@ -32,7 +32,7 @@ public class ToolsBarDemoActivity extends BaseAppCompatActivity {
         mToolbar.setTitleTextColor(Color.WHITE);
         mToolbar.setTitle("Title");
         mToolbar.setSubtitle("subtitle");
-        mToolbar.setNavigationIcon(R.mipmap.ic_arrow_back_white);
+       // mToolbar.setNavigationIcon(R.mipmap.ic_arrow_back_white);
         mToolbar.setLogo(R.drawable.test_logo);
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

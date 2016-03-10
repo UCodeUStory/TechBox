@@ -43,7 +43,7 @@ public class BookDetailActivity extends AppCompatActivity implements View.OnClic
         Toolbar tb= (Toolbar) findViewById(R.id.tb_detail );
         tb.setTitleTextColor(Color.WHITE);
         tb.setTitle("图书详情");
-        tb.setNavigationIcon(R.mipmap.ic_arrow_back_white);
+      //  tb.setNavigationIcon(R.mipmap.ic_arrow_back_white);
         setSupportActionBar(tb);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         fab= (FloatingActionButton) findViewById(R.id.fab);

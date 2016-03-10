@@ -1,6 +1,7 @@
 package com.ustory.techbox.views;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -75,6 +76,8 @@ public class NewMessageFragment extends Fragment implements ITTechView, View.OnC
             @Override
             public void onItemClick(View view, int position)
             {
+                Intent intent = new Intent(getActivity(),NewMessageDetailActivity.class);
+                startActivity(intent);
                 Toast.makeText(getActivity(), position + " click",
                         Toast.LENGTH_SHORT).show();
             }

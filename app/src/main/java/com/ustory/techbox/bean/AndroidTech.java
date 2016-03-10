@@ -7,7 +7,17 @@ package com.ustory.techbox.bean;
  */
 public class AndroidTech extends ITTech {
     private String detailContent;
-    private String type;
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
+
+    private String tag;
 
     public String getDetailContent() {
         return detailContent;
@@ -17,13 +27,7 @@ public class AndroidTech extends ITTech {
         this.detailContent = detailContent;
     }
 
-    public String getType() {
-        return type;
-    }
 
-    public void setType(String type) {
-        this.type = type;
-    }
 
     public AndroidTech() {
 

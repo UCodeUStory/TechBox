@@ -48,7 +48,7 @@ public class AndroidNewTechAdapter extends RecyclerView.Adapter<AndroidNewTechAd
        // techView.imageView.setImageResource(androidTechs.get(position).getImg());
 
           techView.content.setText(androidTechs.get(position).getContent());
-          techView.type.setText(androidTechs.get(position).getType());
+          techView.type.setText(androidTechs.get(position).getTag());
           techView.date.setText(androidTechs.get(position).getDate());
     }
 

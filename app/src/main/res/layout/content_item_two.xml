@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/cardView_header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="IOS"
+                android:textColor="@color/green"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:background="@color/cardView_header"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="把上一个改回默认把当前改为需要的颜色 "
+                android:clickable="true"
+                android:background="@drawable/selector_item_clickable"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="把上一个改回默认把当前改为需要的颜色 "
+                android:clickable="true"
+                android:background="@drawable/selector_item_clickable"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+</android.support.v7.widget.CardView>

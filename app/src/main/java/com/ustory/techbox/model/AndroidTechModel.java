@@ -42,7 +42,7 @@ public class AndroidTechModel implements IAndroidTechModel {
             AndroidTech androidTech = new AndroidTech();
             androidTech.setId(i);
             androidTech.setContent(DataProvider.AndroidNewTechContent[i]);
-            androidTech.setType(DataProvider.type[i]);
+            androidTech.setTag(DataProvider.type[i]);
             androidTech.setDate(DataProvider.androidTechDate[i]);
             list.add(androidTech);
 

@@ -5,7 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="loginTitle_bg">#1874CD</color>
     <color name="white">#FFFFFF</color>
-    <color name="green">#FAFA</color>
+    <color name="green">#ff388E3C</color>
 
     <color name="Indigo_colorPrimaryDark">#303f9f</color>
     <color name="Indigo_colorPrimary">#3f51b5</color>
@@ -44,5 +44,8 @@
     <color name="black">#000000</color>
     <color name="gray">#999999</color>
     <color name="toolbar_demo">#3F51B5</color>
+    <color name="new_message_sub_title">#ff7723</color>
+    <color name="new_message_cardview">#d4cfcc</color>
+    <color name="cardView_header">#ffF6F6EF</color>
 
 </resources>

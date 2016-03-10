@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/new_message_title_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.描述"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:background="@mipmap/new_message_content_title"
+        android:textSize="21sp"/>
+
+    <TextView
+        android:id="@+id/text"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="Android的HAL是为了保护一些硬件提供商的知识产权而提出的，是为了避开linux的GPL束缚。思路是把控制硬件的动作都放到了 Android HAL中，而linux driver仅仅完成一些简单的数据交互作用，甚至把硬件寄存器空间直接映射到user space因此硬件厂商可以只提供二进制代码，所以说Android只是一个开放的平台："
+        />
+    <TextView
+        android:id="@+id/new_message_subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.自定义X509TrustManager"
+        android:textColor="@color/new_message_sub_title"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:textSize="21sp"
+        />
+    <View
+        android:layout_width="270dp"
+        android:layout_height="2dp"
+        android:background="@color/new_message_sub_title"/>
+    <TextView
+        android:id="@+id/content_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android的HAL是为了保护一些硬件提供商的知识产权而提出的，是为了避开linux的GPL束缚。思路是把控制硬件的动作都放到了"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:textSize="20sp"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/new_message_cardview">
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
