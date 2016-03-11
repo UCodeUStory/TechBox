@@ -11,7 +11,7 @@ public class L {
 
 	private final static String TAG = "techbox";
 	private final static boolean DEBUG = true;
-	private final static boolean CANCEL_TAG = true;
+	private final static boolean CANCEL_TAG = false;
 	public static void i(String message){
 		if (DEBUG) {
 			Log.i(TAG, message);

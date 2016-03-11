@@ -33,9 +33,35 @@ public class NewMessageDetailActivity extends BaseAppCompatActivity {
     protected void initViews(Bundle savedInstanceState) {
        // ArrayList<String> mTitles=new ArrayList<String>();
         ArrayList<ITTech> itTeches = new ArrayList<ITTech>();
-        for(int i=0;i<10;i++){
-            itTeches.add(new ITTech());
+
+        ArrayList<String> strings = new ArrayList<String>();
+        for (int i=0;i<4;i++){
+            strings.add("item"+i);
         }
+        ITTech itTech = new ITTech();
+        itTech.setType(ITTech.HADER);
+        itTech.setDetailHeaderTitle("这是一项新技术");
+        itTech.setDetailHeaderContent("PPPPPPPPPPP");
+        itTeches.add(itTech);
+
+        ITTech itTech2 = new ITTech();
+        itTech2.setType(ITTech.ITEM);
+        itTech2.setDetailContentHeader("Android");
+        itTech2.setDetailContentItems(strings);
+
+        ITTech itTech3 = new ITTech();
+        itTech3.setType(ITTech.ITEM);
+        itTech3.setDetailContentHeader("IOS");
+        itTech3.setDetailContentItems(strings);
+
+        ITTech itTech4 = new ITTech();
+        itTech4.setType(ITTech.ITEM);
+        itTech4.setDetailContentHeader("WEB");
+        itTech4.setDetailContentItems(strings);
+
+        itTeches.add(itTech2);
+        itTeches.add(itTech3);
+        itTeches.add(itTech4);
 
         mRecyclerView=(RecyclerView) findViewById(R.id.new_message_detail_activity);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));

@@ -18,7 +18,9 @@ public class ITTech {
     private String similar_key_1;
     private String similar_key_2;
 
-    private int type;
+    public final static int HADER = 1;
+    public final static int ITEM = 2;
+    private int type =0;
     private String detailHeaderTitle;
     private String detailHeaderContent;
     private String detailContentHeader;
