@@ -77,7 +77,7 @@ public class DataProvider {
             "Android","Android","Android","Android","Android","Android","Android"
     };
     public static String type[] ={
-            "UI","UI","API","UI","UI","UI","UI","UI","UI","UI","UI"
+            "UI","UI","API","UI","UI","UI","UI","UI","UI","UI","UI","UI"
     };
     public static String AndroidNewTechContent[] = {
             "ToolsBar \n" +
@@ -85,6 +85,7 @@ public class DataProvider {
             "Android5.0新控件CardView的介绍和使用",
             "RecyclerView" +
                     "使用它代替ListView，使其更加流畅，开发更加简洁。",
+            "自定义实现一个通用的下拉上拉刷新控件",
             "TabLayout谷歌新推出的一个Tablayout用来实现tab，使用更是简洁",
             "View Elevation哇塞，既然支持Z周，从此Android变得活灵活现 ",
             "FloatingActionButton，小小工具箱，不愁无处放了",
@@ -96,7 +97,7 @@ public class DataProvider {
 
     public static String androidTechDate[] = {
             "3小时前","4小时前","5小时前","6小时前","7小时前","8小时前",
-            "9小时前","10小时前","11小时前","1天前","2天前"
+            "9小时前","10小时前","11小时前","1天前","2天前","2天前"
     };
     //Android TextView 里面既然支持"\n"
 

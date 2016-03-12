@@ -61,6 +61,9 @@ public class AndroidTechListFragment extends BaseFragment implements IAndroidTec
                         intent = new Intent(getActivity(),RecycleViewDemoActivity.class);
                         startActivity(intent);
                          break;
+                    case 3:
+                       // intent = new Intent(getActivity(),PullRefreshActivity.class);
+                        //startActivity(intent);
                     default:
                          break;
                 }

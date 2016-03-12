@@ -69,7 +69,7 @@ public class MultipleItemAdapter extends RecyclerView.Adapter<MultipleItemAdapte
                 holder.mLinearLayout.addView(createHeaderView(mItTeches.get(position).getDetailContentHeader()));
                 for (int i=0;i<mItTeches.get(position).getDetailContentItems().size();i++) {
                  //   createItemContentView
-                    holder.mLinearLayout.addView(createItemContentView("string"));
+                    holder.mLinearLayout.addView(createItemContentView(mItTeches.get(position).getDetailContentItems().get(i),"https://github.com/UCodeUStory"));
                 }
 
         }
@@ -109,6 +109,14 @@ public class MultipleItemAdapter extends RecyclerView.Adapter<MultipleItemAdapte
         LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) imageView.getLayoutParams();
         lp.setMargins(10, 10, 10, 10);
         imageView.setLayoutParams(lp);
+        imageView.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+                WebViewActivity.toUrl(mContext,"https://github.com/UCodeUStory");
+            }
+        });
         return imageView;
 
     }
@@ -122,9 +130,9 @@ public class MultipleItemAdapter extends RecyclerView.Adapter<MultipleItemAdapte
                 android:textStyle="bold"
                 android:textColor="@color/black"/>*/
 
-    public TextView createItemContentView(String text){
+    public TextView createItemContentView(String text, final String url){
         TextView textView = new TextView(mContext);
-        textView.setText("把上一个改回默认把当前改为需要的颜色");
+        textView.setText(text);
         textView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,100));
         textView.setTextColor(mContext.getResources().getColor(R.color.black));
         textView.setBackgroundResource(R.drawable.selector_item_clickable);
@@ -133,6 +141,14 @@ public class MultipleItemAdapter extends RecyclerView.Adapter<MultipleItemAdapte
         textView.setTextSize(15);
         textView.setPadding(15,15,15,15);
         textView.setGravity(Gravity.CENTER_VERTICAL);
+        textView.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+
+                WebViewActivity.toUrl(mContext,url);
+            }
+        });
         return textView;
     }
 
