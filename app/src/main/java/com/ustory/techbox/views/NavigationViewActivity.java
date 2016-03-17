@@ -136,6 +136,10 @@ public class NavigationViewActivity extends BaseAppCompatActivity {
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new AndroidTechListFragment()).commit();
                 mToolbar.setTitle("Android新特性");
                 break;
+            case R.id.item_four:
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new OKHttpDemoFragment()).commit();
+                mToolbar.setTitle("OKHttp案例分析");
+                break;
             case R.id.exit:
                 finish();
                 break;
