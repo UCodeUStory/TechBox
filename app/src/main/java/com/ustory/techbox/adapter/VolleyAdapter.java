@@ -25,7 +25,7 @@ public class VolleyAdapter extends CommonAdapter<VolleyTech>
 
     @Override
     public void convert(ViewHolder viewHolder, VolleyTech item) {
-        viewHolder.setText(R.id.content,item.getContent() );
+        viewHolder.setText(R.id.content,item.getContent());
     }
 
 }

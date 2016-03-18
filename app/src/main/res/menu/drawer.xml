@@ -31,7 +31,7 @@
             <item
                 android:id="@+id/item_four"
                 android:icon="@mipmap/icon"
-                android:title="Glide"></item>
+                android:title="OKHttp"></item>
             <item
                 android:id="@+id/item_five"
                 android:icon="@mipmap/icon"
@@ -39,7 +39,7 @@
             <item
                 android:id="@+id/item_three"
                 android:icon="@mipmap/icon"
-                android:title="OKHttp"></item>
+                android:title="Glide"></item>
             <item
                 android:id="@+id/item_six"
                 android:icon="@mipmap/icon"
