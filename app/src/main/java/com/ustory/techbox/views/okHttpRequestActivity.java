@@ -1,6 +1,7 @@
 package com.ustory.techbox.views;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.example.administrator.test2.R;
 import com.ustory.techbox.core.BaseAppCompatActivity;
@@ -11,6 +12,7 @@ import com.ustory.techbox.core.BaseAppCompatActivity;
  * @ Data:2016/3/18
  */
 public class okHttpRequestActivity extends BaseAppCompatActivity {
+    private TextView mTextView;
     @Override
     protected int getLayoutId() {
         return R.layout.ok_http_request_activity;
@@ -18,7 +20,7 @@ public class okHttpRequestActivity extends BaseAppCompatActivity {
 
     @Override
     protected void initViews(Bundle savedInstanceState) {
-
+        this.mTextView = findView(R.id.content);
     }
 
     @Override
@@ -33,6 +35,7 @@ public class okHttpRequestActivity extends BaseAppCompatActivity {
 
     @Override
     protected void initData() {
-
+         String result = getIntent().getStringExtra("result");
+         this.mTextView.setText(result);
     }
 }
