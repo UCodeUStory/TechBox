@@ -21,6 +21,7 @@ public class DataProvider {
     };
 
     public static String content[] = {
+            "浅谈Android开发中的内存泄漏与优化",
             "今年的Google I/O 2013上，Volley发布了。Volley是Android平台上的网络通信库，能使网络通信更快，更简单，更健壮。",
             "在泰国举行的谷歌开发者论坛上，谷歌为我们介绍了一个名叫 Glide 的图片加载库，作者是bumptech",
             "picasso是Square公司开源的一个Android图形缓存库，可以实现图片下载和缓存功能。仅仅只需要一行代码就能完全实现图片的异步加载",
@@ -34,19 +35,22 @@ public class DataProvider {
 
     public static String similar_key_0[] = {
             "Android","Android","Android","Android","Android",
-            "Android","Android","Android","Android"
+            "Android","Android","Android","Android","Android"
     };
     public static String similar_key_1[] = {
+            "内存泄漏",
             "Volley","Glide","Picasso","OKHttp",
             "Gson","XUtil","ImageLoader","Butternife",
             "Dragger"
     };
     public static String dates[] = {
+            "2016.3.20",
             "2016.3.5","2016.3.3","2016.3.1","2016.2.25","2016.2.24",
             "2016.2.22","2016.2.21","2016.1.19","2016.1.4",
     };
 
     public static int photo[] = {
+            R.mipmap.test1,
             R.mipmap.test8,R.mipmap.test7,R.mipmap.test2,R.mipmap.test3,
             R.mipmap.test4,R.mipmap.test5,R.mipmap.test6,R.mipmap.test9,
             R.mipmap.test1
@@ -80,8 +84,8 @@ public class DataProvider {
             "UI","UI","API","UI","UI","UI","UI","UI","UI","UI","UI","UI"
     };
     public static String AndroidNewTechContent[] = {
-            "ToolsBar \n" +
-                    " Android Material Design之Toolbar与Palette实践 ",
+
+            "ToolsBar Android Material Design之Toolbar与Palette实践 ",
             "Android5.0新控件CardView的介绍和使用",
             "RecyclerView" +
                     "使用它代替ListView，使其更加流畅，开发更加简洁。",
