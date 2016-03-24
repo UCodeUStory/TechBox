@@ -59,7 +59,7 @@ public abstract class ImageBaseAdapter extends BaseAdapter {
 			convertView.setTag(viewHolder);
 		}
 		else {
-			viewHolder=(ViewHolder)convertView.getTag();
+			viewHolder = (ViewHolder)convertView.getTag();
 		}
 		
 		setImage(viewHolder.ivCar, imageUrlArray[position]);
