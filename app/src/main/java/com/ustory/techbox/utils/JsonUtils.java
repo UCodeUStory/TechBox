@@ -11,23 +11,22 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.lang.reflect.Type;
-import java.util.List;
 
 
 public class JsonUtils {
 
 
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		//testToJson();
 //		testFromJsonStr();
 		String jsonStr = "{\"name\":\"mayubao\",\"age\":\"10\",\"height\":170}";
 		String jsonStr2 = "[{\"name\":\"mayubao\",\"age\":\"10\",\"height\":170},{\"name\":\"mayubao\",\"age\":\"20\",\"height\":160}]";
-		/**
+		*//**
 		 * 初次看到第一行代码的时候感觉非常怪异，很奇怪为什么需要设计这样的API。
 		 * 仔细思索之后，发现设计者真实的目的其实非常简单，只是为了提取泛型的类型，
 		 * 原因是Java的泛型对象的类型不能直接通过类型本身获取到，
 		 * 比如类似List<String>.class的代码是无法通过编译，原因和Java泛型的实现机制有关系。
-		 */
+		 *//*
 		//普通类型可以直接通过.class 获取类型
 		TypeToken<UserInfo> type = new TypeToken<UserInfo>(){};
 		UserInfo userInfo = JsonUtils.jsonToObject(jsonStr, type);
@@ -44,7 +43,7 @@ public class JsonUtils {
 			System.out.println("" + userInfoList.get(i).age);
 			System.out.println("" + userInfoList.get(i).height);
 		}
-	}
+	}*/
 
 	private static void testFromJsonStr() {
 		Gson gson = new Gson();

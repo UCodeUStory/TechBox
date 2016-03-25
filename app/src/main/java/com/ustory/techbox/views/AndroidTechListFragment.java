@@ -62,8 +62,8 @@ public class AndroidTechListFragment extends BaseFragment implements IAndroidTec
                         startActivity(intent);
                          break;
                     case 3:
-                       // intent = new Intent(getActivity(),PullRefreshActivity.class);
-                        //startActivity(intent);
+                        intent = new Intent(getActivity(),SwipeActivity.class);
+                        startActivity(intent);
                     default:
                          break;
                 }
