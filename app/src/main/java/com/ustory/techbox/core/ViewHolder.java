@@ -70,7 +70,7 @@ public class ViewHolder
 		}
 	}
 
-	public int getPosition()
+	public int getPosition( )
 	{
 		return mPosition;
 	}
