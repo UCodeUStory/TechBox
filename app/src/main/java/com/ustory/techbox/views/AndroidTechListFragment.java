@@ -40,7 +40,7 @@ public class AndroidTechListFragment extends BaseFragment implements IAndroidTec
     @Override
     protected void initView(View rootView) {
         mRecyclerView = $(R.id.atlf_recyclerView);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+          mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mItemClickListener = new AndroidNewTechAdapter.RecycleItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {

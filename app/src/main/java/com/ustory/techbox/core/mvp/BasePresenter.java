@@ -51,9 +51,6 @@ public class BasePresenter<V extends MvpView> implements Presenter<V> {
     @Override
     public void detachView() {
         this.mMvpView = null;
-        //this.mCompositeSubscription.unsubscribe();
-       // this.mCompositeSubscription = null;
-       // this.mDataManager = null;
     }
 
     public boolean isViewAttached() {
