@@ -96,12 +96,13 @@ public class DataProvider {
             "Snackbar代替旧版Toast效果更让人接受",
             "Palette，你还在担心UI布局样式不统一吗，还在为取色烦恼吗？","Navigation View抽屉菜单栏的无可替代品",
             "CoordinatorLayout这个真是太精彩了，同能如果强大有用，一言难以形容",
-            "AppBarLayout，我想对你说ActionBar，你可以out了！！！！"
+            "AppBarLayout，我想对你说ActionBar，你可以out了！！！！",
+            "EventBus 更加方便你的使用"
     };
 
     public static String androidTechDate[] = {
             "3小时前","4小时前","5小时前","6小时前","7小时前","8小时前",
-            "9小时前","10小时前","11小时前","1天前","2天前","2天前"
+            "9小时前","10小时前","11小时前","1天前","2天前","2天前","1天前"
     };
     //Android TextView 里面既然支持"\n"
 
