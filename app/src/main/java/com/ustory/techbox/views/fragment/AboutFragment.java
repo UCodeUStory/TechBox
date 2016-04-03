@@ -1,4 +1,4 @@
-package com.ustory.techbox.views;
+package com.ustory.techbox.views.fragment;
 
 import android.view.View;
 
